@@ -8,3 +8,38 @@
     <p>Forex trading platform coming soon.</p>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hypertrades | Live Forex Prices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial; text-align: center; padding: 20px; }
+        .ticker { margin: 30px auto; max-width: 600px; }
+    </style>
+</head>
+<body>
+    <h1>Hypertrades</h1>
+    <p>Live Forex Prices</p>
+
+    <!-- TradingView Widget START -->
+    <div class="tradingview-widget-container ticker">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+        {
+            "symbols": [
+                { "title": "EUR/USD", "proName": "FX:EURUSD" },
+                { "title": "GBP/USD", "proName": "FX:GBPUSD" },
+                { "title": "USD/JPY", "proName": "FX:USDJPY" }
+            ],
+            "colorTheme": "light",
+            "isTransparent": true,
+            "locale": "en"
+        }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+
+    <p>Refresh the page to update prices.</p>
+</body>
+</html>
