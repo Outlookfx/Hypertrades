@@ -42,4 +42,24 @@
 
     <p>Refresh the page to update prices.</p>
 </body>
-</html>
+</html><button id="themeBtn" onclick="toggleTheme()">🌙 Dark Mode</button>
+<style>
+  /* Light theme (default) */
+  body { background: white; color: black; transition: 0.3s; }
+  
+  /* Dark theme */
+  body.dark { background: #121212; color: white; }
+  
+  /* Button styling */
+  #themeBtn { 
+    background: none; 
+    border: none; 
+    font-size: 1.2rem; 
+    cursor: pointer;
+    padding: 8px;
+  }
+</style><script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark");
+  }
+</script>
